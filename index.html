@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>YouTube video finder</title>
+    <link rel="stylesheet" href="style\style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="finder left">
+          <h1 class="finder-heading">YouTube video finder</h1>
+          <form id="js-form">
+            <label for="search-term"></label>
+            <input
+              class="search-input"
+              type="text"
+              name="search-term"
+              id="js-search-term"
+              required
+              placeholder="Search YouTube Videos..."
+            />
+  
+            <label for="max-results"></label>
+            <!-- <input
+              class="max-number"
+              type="number"
+              name="max-results"
+              id="js-max-results"
+              value="10"
+            /> -->
+  
+            <input class="go-button" type="submit" value="Search" />
+          </form>          
+
+        <div class="results-left">
+                <p id="js-error-message" class="error-message"></p>
+                <section id="results" class="hidden">
+                  <h2>Search results</h2>
+                  <ul id="results-list"></ul>
+                </section>
+            </div>
+        </div>
+  
+        <!-- <div class="downloader right">
+          <h1 class="downloader-heading">Download a YouTube video</h1>
+
+          <form id="js-download-form">
+                <label for="dl-term"></label>
+                <input
+                  class="URL-input"
+                  type="text"
+                  name="dl-term"
+                  id="js-dl-term"
+                  required
+                  placeholder="Paste link here.. e.g. https://youtu.be/sC11wWvQ7hE"
+                />        
+                <input class="download-button" type="submit" value="Download" />      
+                <button class="download-button">
+                  <i class="fa fa-download"></i> Download
+                </button>
+              </form> 
+        </div> -->
+        
+        <!-- <div class="results-right">
+                <p id="js-error-message" class="error-message"></p>
+                <section id="results" class="hidden">
+                  <h2>Download results</h2>
+                  <ul id="download-results-list"></ul>
+                </section>
+            </div>  -->
+      </div>
+    <script src="finder-app\finder.js"></script>
+    <script src="downloader-app\downloader.js"></script>
+</body>
+</html>

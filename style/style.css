@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .finder-heading,
+  .downloader-heading {
+    font-family: "Oswald", sans-serif;
+    margin-top: 40vh;
+  }
+  
+  body {
+    font-family: "Lato", sans-serif;
+  }
+  
+  .URL-input,
+  .download-button,
+  .go-button,
+  .max-number,
+  .search-input {
+    font-size: 1.3em;
+    padding: 5px 10px;
+  }
+  
+  .URL-input,
+  .search-input,
+  .max-number {
+    border-radius: 4px 0px 0px 4px;
+    width: 15em;
+    text-align: left;
+    border: 2px solid red;
+    background: #eeeeee;
+    outline: none;
+  }
+  
+  .URL-input:focus {
+    border: 2px solid #0485ff;
+  }
+  
+  .search-input:focus {
+    border: 2px solid #0485ff;
+  }
+  
+  .max-number:focus {
+    border: 2px solid #0485ff;
+  }
+  
+  .download-button,
+  .go-button {
+    border-radius: 0px 4px 4px 0px;
+    border: 2px solid red;
+    background: red;
+    color: white;
+  }
+  
+  .max-number {
+    width: 12%;
+  }
+  
+  button,
+  input[type="text"] {
+    padding: 5px;
+  }
+  
+  button:hover {
+    cursor: pointer;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .error-message {
+    color: red;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
